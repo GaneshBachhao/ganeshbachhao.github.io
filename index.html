@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
+    <link id="theme-style" rel="stylesheet" href="css/theme-light.css">
 
 </head>
 
@@ -36,7 +37,23 @@
             <a href="#contact">Contact</a>
 
         </nav>
+<div class="theme-buttons">
 
+    <button
+        onclick="setTheme('theme-light')">
+
+        ☀ Light
+
+    </button>
+
+    <button
+        onclick="setTheme('theme-dark')">
+
+        🌙 Dark
+
+    </button>
+
+</div>
     </header>
 
     <!-- HERO -->
@@ -367,7 +384,7 @@
         © 2026 Ganesh Bachhao
 
     </footer>
-
+    <script src="js/theme-switcher.js"></script>
     <script src="js/main.js"></script>
 
 </body>

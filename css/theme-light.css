@@ -1,0 +1,24 @@
+/* theme-light.css */
+
+body {
+
+    background: #ffffff;
+    color: #24292e;
+}
+
+header {
+
+    background: #ffffff;
+}
+
+nav a {
+
+    color: #24292e;
+}
+
+.skill-category,
+.project-card,
+.stat-card {
+
+    background: #ffffff;
+}

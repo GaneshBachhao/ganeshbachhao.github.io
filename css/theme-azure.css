@@ -1,0 +1,28 @@
+/* theme-azure.css */
+
+:root {
+
+    --primary: #0078D4;
+    --secondary: #50E6FF;
+}
+
+.logo {
+
+    color: var(--primary);
+}
+
+.section-title {
+
+    color: var(--primary);
+}
+
+.btn-primary {
+
+    background: var(--primary);
+}
+
+.skill-category:hover,
+.project-card:hover {
+
+    border-color: var(--primary);
+}

@@ -1,0 +1,63 @@
+/* theme-dark.css */
+
+body {
+
+    background-color: #0d1117;
+    color: #e6edf3;
+}
+
+header {
+
+    background: #161b22;
+    border-bottom: 1px solid #30363d;
+}
+
+nav a {
+
+    color: #e6edf3;
+}
+
+nav a:hover {
+
+    color: #58a6ff;
+}
+
+.logo {
+
+    color: #58a6ff;
+}
+
+.hero {
+
+    background: #0d1117;
+}
+
+.hero h1,
+.hero h2,
+.hero p {
+
+    color: #e6edf3;
+}
+
+.stat-card,
+.skill-category,
+.project-card,
+.timeline-item {
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+
+    color: #e6edf3;
+}
+
+.section-title {
+
+    color: #58a6ff;
+}
+
+footer {
+
+    background: #161b22;
+    color: #8b949e;
+}
