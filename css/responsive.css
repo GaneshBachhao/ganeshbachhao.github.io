@@ -26,3 +26,26 @@ header{
 }
 
 }
+
+/* Skill container */
+/* Tablet */
+
+@media (max-width: 1024px) {
+
+    .skills-container {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .skills-container {
+
+        grid-template-columns: 1fr;
+    }
+
+}
