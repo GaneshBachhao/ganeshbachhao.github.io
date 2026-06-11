@@ -49,3 +49,23 @@ header{
     }
 
 }
+
+@media (max-width: 768px) {
+
+    .phase-header {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .sub-section-title {
+
+        font-size: 1.6rem;
+    }
+
+    .evolution-card {
+
+        padding: 20px;
+    }
+}

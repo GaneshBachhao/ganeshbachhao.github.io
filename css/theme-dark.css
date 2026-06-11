@@ -110,3 +110,27 @@ footer {
 
     box-shadow: 0 4px 12px rgba(88, 166, 255, 0.25);
 }
+
+body.dark-theme .evolution-card {
+
+    background: #161b22;
+
+    border: 1px solid #30363d;
+
+    color: #e6edf3;
+}
+
+body.dark-theme .evolution-card li {
+
+    color: #e6edf3;
+}
+
+body.dark-theme .phase-header h4 {
+
+    color: #58a6ff;
+}
+
+body.dark-theme .sub-section-title {
+
+    color: #58a6ff;
+}
