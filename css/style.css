@@ -99,8 +99,10 @@ nav a {
 
 .hero-image img {
 
-    width: 220px;
-    border-radius: 50%;
+    width: 380px;
+    height: auto;          /* Maintains original aspect ratio */
+    object-fit: contain;
+    /* border-radius: 50%; */
 }
 
 .stats {
