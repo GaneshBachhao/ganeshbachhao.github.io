@@ -6,9 +6,10 @@ const titles = [
   "Senior .NET Developer",
   ".NET & Azure Specialist",
   "Cloud Solution Designer",
+  "AI Solutions Engineer",
+  ".NET Gen AI Developer",
   "Technology Lead",
-  "AI Powered Application Builder",
-  "Software/Technology Architect",
+  ".NET/Technology Architect",
 ];
 
 let titleIndex = 0;

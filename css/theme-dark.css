@@ -61,3 +61,52 @@ footer {
     background: #161b22;
     color: #8b949e;
 }
+
+/* ==========================
+   Dark Theme Tech Badges
+   ========================== */
+
+   .project-tech {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    margin: 20px 0;
+}
+.project-tech span {
+
+    background: #1f2937;
+
+    color: #58a6ff;
+
+    border: 1px solid #30363d;
+
+    display: inline-flex;
+    align-items: center;
+
+    padding: 8px 14px;
+
+    border-radius: 999px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: 0.3px;
+
+    transition: all 0.3s ease;
+
+
+}
+
+.project-tech span:hover {
+
+    background: #58a6ff;
+
+    color: #0d1117;
+
+    border-color: #58a6ff;
+     transform: translateY(-2px);
+
+    box-shadow: 0 4px 12px rgba(88, 166, 255, 0.25);
+}
