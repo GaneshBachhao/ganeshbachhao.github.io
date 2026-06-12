@@ -2,31 +2,16 @@ import "./CareerTimeline.css";
 
 const timeline = [
   {
-    year: "2014",
-    title: "Software Engineer",
+    year: "2012-2017",
+    title: "Software Engineer To Senior Software Engineer",
     description:
-      "Started career building enterprise web applications using .NET technologies, SQL Server and frontend frameworks.",
+      "Started career building enterprise web applications using .NET technologies, SQL Server and frontend frameworks. Led development of scalable APIs, performance optimization initiatives and enterprise integrations.",
   },
-
   {
-    year: "2018",
-    title: "Senior Software Engineer",
+    year: "2017-2025",
+    title: "Technology Lead To transitioning to Technology Architect",
     description:
-      "Led development of scalable APIs, performance optimization initiatives and enterprise integrations.",
-  },
-
-  {
-    year: "2022",
-    title: "Technology Lead",
-    description:
-      "Managed cross-functional teams, architecture decisions, cloud modernization and delivery governance.",
-  },
-
-  {
-    year: "2026+",
-    title: "Solution Architect (Target)",
-    description:
-      "Driving enterprise architecture, cloud transformation, AI adoption and technology strategy.",
+      "Managed cross-functional teams, architecture decisions, cloud modernization and delivery governance. Driving enterprise architecture, cloud transformation, AI adoption and technology strategy.",
   },
 ];
 
