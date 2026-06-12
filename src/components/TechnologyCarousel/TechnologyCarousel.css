@@ -1,0 +1,50 @@
+.technology-carousel {
+  display: block;
+}
+.carousel-section {
+
+  padding: 100px 0;
+
+  background: var(--bg-secondary);
+}
+
+.tech-card {
+
+  overflow: hidden;
+
+  border-radius: 20px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  box-shadow: var(--shadow);
+}
+
+.tech-card img {
+
+  width: 100%;
+
+  height: 450px;
+
+  object-fit: cover;
+}
+
+.tech-content {
+
+  padding: 30px;
+}
+
+.tech-content h3 {
+
+  color: var(--accent);
+
+  margin-bottom: 15px;
+}
+
+.tech-content p {
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}

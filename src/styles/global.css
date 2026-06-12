@@ -1,0 +1,80 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  background: var(--bg-primary);
+
+  color: var(--text-primary);
+
+  font-family:
+    Inter,
+    Segoe UI,
+    sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+.section-subtitle {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.btn-primary {
+
+  background: var(--accent);
+
+  color: white;
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+.btn-secondary {
+
+  border: 1px solid var(--accent);
+
+  color: var(--accent);
+
+  padding: 12px 24px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-weight: 600;
+}
+
+a,
+button,
+.card,
+.project-card,
+.skill-card,
+.architecture-card {
+
+  transition: all .3s ease;
+}

@@ -1,0 +1,28 @@
+/* .theme-toggle {
+  display: inline-flex;
+} */
+.theme-toggle {
+
+  width: 44px;
+
+  height: 44px;
+
+  border-radius: 50%;
+
+  border: 1px solid var(--card-border);
+
+  background: var(--card-bg);
+
+  color: var(--text-primary);
+
+  cursor: pointer;
+
+  transition: all .3s ease;
+}
+
+.theme-toggle:hover {
+
+  transform: rotate(15deg);
+
+  border-color: var(--accent);
+}

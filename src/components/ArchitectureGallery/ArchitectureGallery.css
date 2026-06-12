@@ -1,0 +1,66 @@
+.architecture-section {
+
+  padding: 100px 0;
+
+  background: var(--bg-primary);
+}
+
+.architecture-grid {
+
+  display: grid;
+
+  grid-template-columns:
+      repeat(auto-fit, minmax(450px, 1fr));
+
+  gap: 30px;
+
+  margin-top: 60px;
+}
+
+.architecture-card {
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow: var(--shadow);
+
+  transition: all .3s ease;
+}
+
+.architecture-card:hover {
+
+  transform: translateY(-8px);
+}
+
+.architecture-card img {
+
+  width: 100%;
+
+  height: 260px;
+
+  object-fit: cover;
+}
+
+.architecture-content {
+
+  padding: 25px;
+}
+
+.architecture-content h3 {
+
+  color: var(--accent);
+
+  margin-bottom: 12px;
+}
+
+.architecture-content p {
+
+  color: var(--text-secondary);
+
+  line-height: 1.8;
+}
