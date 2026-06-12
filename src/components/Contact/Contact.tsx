@@ -12,7 +12,16 @@ const Contact = () => {
         </p>
 
         <div className="contact-grid">
-          <a href="mailto:ganesh.bachhao@gmail.com" className="contact-card">
+          <a
+            href="mailto:ganesh.bachhao@gmail.com"
+            className="contact-card"
+            onClick={() => {
+              window.gtag?.("event", "email_click", {
+                event_category: "contact",
+                event_label: "Email Contact",
+              });
+            }}
+          >
             <h3>Email</h3>
             <p>ganesh.bachhao@gmail.com</p>
           </a>
@@ -22,6 +31,12 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             className="contact-card"
+            onClick={() => {
+              window.gtag?.("event", "linkedin_click", {
+                event_category: "social",
+                event_label: "LinkedIn Profile",
+              });
+            }}
           >
             <h3>LinkedIn</h3>
             <p>Professional Network</p>
@@ -32,6 +47,12 @@ const Contact = () => {
             target="_blank"
             rel="noreferrer"
             className="contact-card"
+            onClick={() => {
+              window.gtag?.("event", "github_click", {
+                event_category: "social",
+                event_label: "GitHub Profile",
+              });
+            }}
           >
             <h3>GitHub</h3>
             <p>Projects & Portfolio</p>

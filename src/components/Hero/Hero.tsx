@@ -17,17 +17,31 @@ const Hero = () => {
           <div className="hero-buttons">
             <a
               href="/resume/Ganesh_Bachhao_CV.pdf"
-              download
-              className="btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary"
+              onClick={() => {
+                if (typeof window.gtag !== "undefined") {
+                  window.gtag("event", "resume_download", {
+                    event_category: "engagement",
+                    event_label: "Resume PDF",
+                  });
+                }
+              }}
             >
               Download Resume
             </a>
 
             <a
-              href="https://www.linkedin.com/in/ganeshbachhao/"
+              href="https://linkedin.com/in/ganeshbachhao"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              onClick={() => {
+                window.gtag?.("event", "linkedin_click", {
+                  event_category: "social",
+                  event_label: "LinkedIn Profile",
+                });
+              }}
             >
               LinkedIn
             </a>
@@ -36,7 +50,12 @@ const Hero = () => {
               href="https://github.com/ganeshbachhao"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-secondary"
+              onClick={() => {
+                window.gtag?.("event", "github_click", {
+                  event_category: "social",
+                  event_label: "GitHub Profile",
+                });
+              }}
             >
               GitHub
             </a>
