@@ -1,17 +1,48 @@
+import { useEffect, useState } from "react";
 import "./Hero.css";
 
+const titles = [
+  "Senior Full Stack Engineer",
+  ".NET Backend Developer",
+  "Senior .NET Developer",
+  ".NET & Azure Specialist",
+  "Cloud Solution Designer",
+  "AI Solutions Engineer",
+  ".NET Gen AI Developer",
+  "Technology Lead",
+  ".NET/Technology Architect",
+];
+
 const Hero = () => {
+  const [currentTitle, setCurrentTitle] = useState(titles[0]);
+
+  useEffect(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      index = (index + 1) % titles.length;
+      setCurrentTitle(titles[index]);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="hero">
-      <div className="container">
-        <div className="hero-content">
+    <section id="home" className="hero">
+      <div className="hero-container">
+        {/* LEFT SIDE */}
+
+        <div className="hero-left">
+          <span className="hero-badge">10+ Years Experience</span>
+
           <h1>Ganesh Bachhao</h1>
 
-          <h2>Technology Lead | .NET | Azure | AI Solutions</h2>
+          <h2 className="dynamic-title">{currentTitle}</h2>
 
-          <p>
-            Building scalable enterprise systems, cloud-native applications, and
-            AI-powered solutions.
+          <p className="hero-description">
+            Building scalable enterprise systems, cloud-native applications,
+            distributed architectures and AI-powered solutions across
+            E-Commerce, Manufacturing and Healthcare domains.
           </p>
 
           <div className="hero-buttons">
@@ -19,14 +50,12 @@ const Hero = () => {
               href="/resume/Ganesh_Bachhao_CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary"
+              className="btn-primary"
               onClick={() => {
-                if (typeof window.gtag !== "undefined") {
-                  window.gtag("event", "resume_download", {
-                    event_category: "engagement",
-                    event_label: "Resume PDF",
-                  });
-                }
+                window.gtag?.("event", "resume_download", {
+                  event_category: "resume",
+                  event_label: "Hero Resume Download",
+                });
               }}
             >
               Download Resume
@@ -36,12 +65,7 @@ const Hero = () => {
               href="https://linkedin.com/in/ganeshbachhao"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => {
-                window.gtag?.("event", "linkedin_click", {
-                  event_category: "social",
-                  event_label: "LinkedIn Profile",
-                });
-              }}
+              className="btn-link"
             >
               LinkedIn
             </a>
@@ -50,15 +74,34 @@ const Hero = () => {
               href="https://github.com/ganeshbachhao"
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => {
-                window.gtag?.("event", "github_click", {
-                  event_category: "social",
-                  event_label: "GitHub Profile",
-                });
-              }}
+              className="btn-link"
             >
               GitHub
             </a>
+          </div>
+        </div>
+
+        {/* RIGHT SIDE */}
+
+        <div className="hero-right">
+          <div className="hero-card">
+            <h3>10+</h3>
+            <p>Years Experience</p>
+          </div>
+
+          <div className="hero-card">
+            <h3>15+</h3>
+            <p>Enterprise Applications</p>
+          </div>
+
+          <div className="hero-card">
+            <h3>.NET + Azure</h3>
+            <p>Technology Focus</p>
+          </div>
+
+          <div className="hero-card">
+            <h3>AI Ready</h3>
+            <p>Azure OpenAI Solutions</p>
           </div>
         </div>
       </div>

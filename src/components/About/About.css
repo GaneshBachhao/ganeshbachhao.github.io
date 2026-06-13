@@ -1,69 +1,94 @@
 .about-section {
-
-  padding: 100px 0;
-
+  padding: 24px 0 56px;
   background: var(--bg-secondary);
 }
 
-.about-summary {
-
-  max-width: 1000px;
-
-  margin: auto;
-
-  text-align: justify;
-
-  line-height: 1.9;
-
-  color: var(--text-primary);
-
-  font-size: 1.1rem;
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 50px;
+  align-items: start;
 }
 
-.about-highlights {
-
-  margin-top: 60px;
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(220px, 1fr));
-
+.about-content {
+  display: flex;
+  flex-direction: column;
   gap: 25px;
 }
 
+.about-content p {
+  line-height: 1.9;
+  color: var(--text-primary);
+  font-size: 1.05rem;
+}
+
+.about-highlights {
+  display: grid;
+  gap: 20px;
+}
+
 .highlight-card {
-
   background: var(--card-bg);
-
   border: 1px solid var(--card-border);
-
-  border-radius: 16px;
-
-  padding: 30px;
-
-  text-align: center;
-
+  border-radius: 18px;
+  padding: 24px;
   box-shadow: var(--shadow);
-
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .highlight-card:hover {
-
-  transform: translateY(-6px);
+  transform: translateY(-4px);
 }
 
 .highlight-card h3 {
-
   color: var(--accent);
-
-  margin-bottom: 10px;
-
-  font-size: 1.8rem;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
 }
 
 .highlight-card p {
-
   color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.about-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.about-tech-stack span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--card-bg);
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  font-size: 0.9rem;
+}
+
+.about-tech-stack span:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-section {
+    padding: 20px 0 60px;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .highlight-card {
+    padding: 20px;
+  }
 }

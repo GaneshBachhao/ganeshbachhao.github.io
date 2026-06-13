@@ -6,47 +6,73 @@ const About = () => {
       <div className="container">
         <h2 className="section-title">About Me</h2>
 
-        <p className="about-summary">
-          I am experienced IT professional specializing in building resilient,
-          enterprise-grade distributed systems. My architectural philosophy is
-          rooted in Clean Architecture, Domain-Driven Design (DDD), and
-          Microservices, ensuring that the software I deliver is highly
-          scalable, maintainable, and aligned with complex business domains. On
-          the backend, I leverage the power of the .NET ecosystem (C#, ASP.NET
-          MVC, EF Core) to engineer high-throughput REST APIs and event-driven
-          architectures. On the frontend, I craft type-safe, responsive, and
-          highly performant user interfaces using Angular and TypeScript. My
-          cloud expertise is centered entirely on Microsoft Azure, where I
-          design serverless workloads, robust messaging topologies, and
-          integrate cutting-edge Azure OpenAI / AI Search models to deliver
-          intelligent, production-ready applications. Driven by DevOps culture,
-          I treat automation as a first-class citizen using Azure DevOps and
-          GitHub CI/CD to enforce rapid, stable delivery loops.
-        </p>
+        <div className="about-grid">
+          <div className="about-content">
+            <p>
+              Technology Lead with 10+ years of experience designing and
+              delivering enterprise software solutions across E-Commerce,
+              Manufacturing, and Healthcare domains.
+            </p>
 
-        <div className="about-highlights">
-          <div className="highlight-card">
-            <h3>10+</h3>
+            <p>
+              My expertise spans Cloud Modernization, Distributed Systems,
+              Solution Architecture, and Applied AI with a strong focus on
+              Microsoft Azure and the .NET ecosystem.
+            </p>
 
-            <p>Years Experience</p>
+            <p>
+              I enjoy transforming complex business challenges into scalable,
+              maintainable, and cloud-native solutions while mentoring
+              engineering teams and driving architecture-led delivery.
+            </p>
+
+            <div className="about-tech-stack">
+              <span>.NET 8</span>
+              <span>C#</span>
+              <span>Azure</span>
+              <span>Angular</span>
+              <span>TypeScript</span>
+              <span>Azure OpenAI</span>
+              <span>Azure AI Search</span>
+              <span>Azure Service Bus</span>
+              <span>Microservices</span>
+              <span>DDD</span>
+              <span>CI/CD</span>
+            </div>
           </div>
 
-          <div className="highlight-card">
-            <h3>20+</h3>
+          <div className="about-highlights">
+            <div className="highlight-card">
+              <h3>Cloud Modernization</h3>
+              <p>
+                Transforming legacy enterprise applications into scalable
+                cloud-native Azure solutions.
+              </p>
+            </div>
 
-            <p>Enterprise Applications</p>
-          </div>
+            <div className="highlight-card">
+              <h3>Distributed Systems</h3>
+              <p>
+                Designing event-driven architectures using Azure Service Bus,
+                asynchronous messaging and resilient integration patterns.
+              </p>
+            </div>
 
-          <div className="highlight-card">
-            <h3>.NET + Azure</h3>
+            <div className="highlight-card">
+              <h3>Solution Architecture</h3>
+              <p>
+                Applying Clean Architecture, DDD, Microservices and
+                architectural governance principles.
+              </p>
+            </div>
 
-            <p>Technology Focus</p>
-          </div>
-
-          <div className="highlight-card">
-            <h3>AI Ready</h3>
-
-            <p>Azure OpenAI Solutions</p>
+            <div className="highlight-card">
+              <h3>Applied AI</h3>
+              <p>
+                Building enterprise AI solutions using Azure OpenAI, AI Search
+                and Retrieval-Augmented Generation.
+              </p>
+            </div>
           </div>
         </div>
       </div>

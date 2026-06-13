@@ -4,12 +4,34 @@ const Contact = () => {
   return (
     <section id="contact" className="contact-section">
       <div className="container">
-        <h2 className="section-title">Let's Connect</h2>
+        <h2 className="section-title">Let's Build Something Meaningful</h2>
 
-        <p className="section-subtitle">
-          Open to Senior .NET, Azure, Technical Lead, and Solution Architect
-          opportunities.
+        <p className="contact-intro">
+          Open to Senior .NET, Azure, Technical Lead, Solution Architect and
+          Cloud Engineering opportunities.
         </p>
+
+        <div className="contact-focus">
+          <div className="focus-item">
+            <span>✓</span>
+            <p>Solution Architecture & System Design</p>
+          </div>
+
+          <div className="focus-item">
+            <span>✓</span>
+            <p>Cloud Modernization & Azure Migration</p>
+          </div>
+
+          <div className="focus-item">
+            <span>✓</span>
+            <p>Enterprise .NET & Angular Engineering</p>
+          </div>
+
+          <div className="focus-item">
+            <span>✓</span>
+            <p>AI-Powered Enterprise Solutions</p>
+          </div>
+        </div>
 
         <div className="contact-grid">
           <a
@@ -22,7 +44,7 @@ const Contact = () => {
               });
             }}
           >
-            <h3>Email</h3>
+            <h3>📧 Email</h3>
             <p>ganesh.bachhao@gmail.com</p>
           </a>
 
@@ -38,7 +60,7 @@ const Contact = () => {
               });
             }}
           >
-            <h3>LinkedIn</h3>
+            <h3>💼 LinkedIn</h3>
             <p>Professional Network</p>
           </a>
 
@@ -54,14 +76,25 @@ const Contact = () => {
               });
             }}
           >
-            <h3>GitHub</h3>
-            <p>Projects & Portfolio</p>
+            <h3>💻 GitHub</h3>
+            <p>Projects & Architecture Samples</p>
           </a>
 
-          <div className="contact-card">
-            <h3>Location</h3>
-            <p>Pune,India </p>
-          </div>
+          <a
+            href="/resume/Ganesh_Bachhao_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="contact-card"
+            onClick={() => {
+              window.gtag?.("event", "resume_download", {
+                event_category: "resume",
+                event_label: "Contact Resume Download",
+              });
+            }}
+          >
+            <h3>📄 Resume</h3>
+            <p>Download Latest CV</p>
+          </a>
         </div>
       </div>
     </section>

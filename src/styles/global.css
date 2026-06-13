@@ -1,80 +1,241 @@
-/* Global styles */
+/* ==========================================
+   RESET
+========================================== */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* ==========================================
+   DOCUMENT
+========================================== */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-
   background: var(--bg-primary);
 
   color: var(--text-primary);
 
   font-family:
     Inter,
-    Segoe UI,
+    "Segoe UI",
     sans-serif;
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
 }
+
+/* ==========================================
+   GLOBAL LAYOUT
+========================================== */
 
 .container {
   max-width: 1400px;
+
   margin: 0 auto;
+
   padding: 0 40px;
 }
 
+/* ==========================================
+   SECTION SYSTEM
+========================================== */
+
+section {
+  scroll-margin-top: 90px;
+}
+
+/* Default section */
+
+.section {
+  padding: 70px 0;
+}
+
+/* Smaller sections */
+
+.section-tight {
+  padding: 50px 0;
+}
+
+/* Larger sections */
+
+.section-large {
+  padding: 90px 0;
+}
+
+/* ==========================================
+   HEADINGS
+========================================== */
+
 .section-title {
   text-align: center;
-  margin-bottom: 20px;
+
   font-size: 2.5rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  color: var(--text-primary);
+
+  margin-bottom: 14px;
 }
 
 .section-subtitle {
   text-align: center;
-  max-width: 800px;
-  margin: 0 auto 50px;
+
+  max-width: 850px;
+
+  margin: 0 auto 40px;
+
+  color: var(--text-secondary);
+
+  font-size: 1.05rem;
+
+  line-height: 1.8;
 }
 
-.btn-primary {
+/* ==========================================
+   BUTTONS
+========================================== */
 
+.btn-primary {
   background: var(--accent);
 
   color: white;
 
   padding: 12px 24px;
 
-  border-radius: 8px;
+  border-radius: 10px;
 
   text-decoration: none;
 
   font-weight: 600;
+
+  display: inline-block;
 }
 
 .btn-secondary {
-
   border: 1px solid var(--accent);
 
   color: var(--accent);
 
   padding: 12px 24px;
 
-  border-radius: 8px;
+  border-radius: 10px;
 
   text-decoration: none;
 
   font-weight: 600;
+
+  display: inline-block;
 }
 
-a,
-button,
+/* ==========================================
+   GLOBAL CARD SYSTEM
+========================================== */
+
 .card,
 .project-card,
 .skill-card,
-.architecture-card {
+.architecture-card,
+.contact-card,
+.highlight-card,
+.hero-card,
+.evolution-card {
+  transition: all 0.3s ease;
+}
 
-  transition: all .3s ease;
+/* ==========================================
+   LINKS
+========================================== */
+
+a {
+  color: inherit;
+}
+
+/* ==========================================
+   IMAGES
+========================================== */
+
+img {
+  max-width: 100%;
+
+  display: block;
+}
+
+/* ==========================================
+   SELECTION
+========================================== */
+
+::selection {
+  background: var(--accent);
+
+  color: white;
+}
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 992px) {
+  .container {
+    padding: 0 30px;
+  }
+
+  .section-title {
+    font-size: 2.2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 576px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 1.9rem;
+  }
+
+  .section-subtitle {
+    font-size: 0.95rem;
+
+    margin-bottom: 30px;
+  }
 }

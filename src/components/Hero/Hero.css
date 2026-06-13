@@ -1,55 +1,285 @@
 .hero {
+  padding: 72px 40px 40px;
+  background: var(--bg-color);
+}
 
-  min-height: 100vh;
+.hero-container {
+  max-width: 1400px;
+  margin: 0 auto;
 
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* ===========================
+   LEFT SECTION
+=========================== */
+
+.hero-left {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-badge {
+  display: inline-block;
+  align-self: flex-start;
+
+  padding: 10px 18px;
+
+  border-radius: 999px;
+
+  background: rgba(0, 120, 212, 0.1);
+
+  color: var(--accent);
+
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.hero-left h1 {
+  font-size: 4.5rem;
+
+  font-weight: 800;
+
+  color: var(--accent);
+
+  line-height: 1.05;
+
+  margin-bottom: 16px;
+}
+
+.hero-left h2 {
+  font-size: 2rem;
+
+  font-weight: 700;
+
+  color: var(--accent);
+
+  margin-bottom: 24px;
+}
+
+/* Dynamic Title */
+
+.dynamic-title {
+  min-height: 52px;
+
+  animation: titleFade 0.5s ease;
+}
+
+@keyframes titleFade {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-description {
+  font-size: 1.15rem;
+
+  line-height: 1.8;
+
+  color: var(--text-secondary);
+
+  max-width: 760px;
+
+  margin-bottom: 35px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.hero-buttons {
   display: flex;
 
   align-items: center;
 
-  background: var(--bg-primary);
+  gap: 20px;
+
+  flex-wrap: wrap;
 }
 
-.hero-content {
+.btn-primary {
+  padding: 14px 28px;
 
-  text-align: center;
+  border-radius: 12px;
+
+  background: var(--accent);
+
+  color: white;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
-.hero h1 {
+.btn-primary:hover {
+  transform: translateY(-3px);
+}
 
-  font-size: 4rem;
-
+.btn-link {
   color: var(--accent);
 
-  margin-bottom: 15px;
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: all 0.3s ease;
 }
 
-.hero h2 {
-
-  font-size: 1.8rem;
-
-  margin-bottom: 20px;
-
-  color: var(--text-primary);
+.btn-link:hover {
+  text-decoration: underline;
 }
 
-.hero p {
+/* ===========================
+   RIGHT SECTION
+=========================== */
 
-  max-width: 700px;
+.hero-right {
+  display: flex;
+  flex-direction: column;
 
-  margin: 0 auto;
+  gap: 16px;
+}
 
+.hero-card {
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 20px;
+
+  padding: 24px;
+
+  text-align: center;
+
+  box-shadow: var(--shadow);
+
+  transition: all 0.3s ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-6px);
+}
+
+.hero-card h3 {
+  color: var(--accent);
+
+  font-size: 1.9rem;
+
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.hero-card p {
   color: var(--text-secondary);
 
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
-.hero-buttons {
+/* ===========================
+   TABLET
+=========================== */
 
-  margin-top: 40px;
+@media (max-width: 992px) {
+  .hero {
+    padding: 92px 30px 46px;
+  }
 
-  display: flex;
+  .hero-container {
+    grid-template-columns: 1fr;
 
-  justify-content: center;
+    gap: 40px;
+  }
 
-  gap: 20px;
+  .hero-left {
+    text-align: center;
+  }
+
+  .hero-badge {
+    align-self: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-right {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero-left h2 {
+    font-size: 1.7rem;
+  }
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 84px 20px 36px;
+  }
+
+  .hero-left h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-left h2 {
+    font-size: 1.3rem;
+  }
+
+  .dynamic-title {
+    min-height: 40px;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+  }
+
+  .btn-primary,
+  .btn-link {
+    text-align: center;
+  }
+
+  .hero-right {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    padding: 18px;
+  }
 }

@@ -1,20 +1,88 @@
 .contact-section {
 
-  padding: 100px 0;
+  padding: 56px 0 64px;
 
   background: var(--bg-secondary);
 }
+
+/* INTRO */
+
+.contact-intro {
+
+  max-width: 900px;
+
+  margin: 0 auto 20px;
+
+  text-align: center;
+
+  font-size: 1.1rem;
+
+  line-height: 1.8;
+
+  color: var(--text-primary);
+}
+
+/* FOCUS AREAS */
+
+.contact-focus {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 18px;
+
+  margin-bottom: 24px;
+}
+
+.focus-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 14px;
+
+  padding: 18px 20px;
+
+  box-shadow: var(--shadow);
+}
+
+.focus-item span {
+
+  color: var(--accent);
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+}
+
+.focus-item p {
+
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-weight: 500;
+}
+
+/* CONTACT CARDS */
 
 .contact-grid {
 
   display: grid;
 
   grid-template-columns:
-    repeat(auto-fit, minmax(250px, 1fr));
+    repeat(auto-fit, minmax(260px, 1fr));
 
-  gap: 25px;
-
-  margin-top: 50px;
+  gap: 24px;
 }
 
 .contact-card {
@@ -23,9 +91,9 @@
 
   border: 1px solid var(--card-border);
 
-  border-radius: 16px;
+  border-radius: 20px;
 
-  padding: 30px;
+  padding: 28px;
 
   text-align: center;
 
@@ -35,12 +103,14 @@
 
   box-shadow: var(--shadow);
 
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .contact-card:hover {
 
-  transform: translateY(-8px);
+  transform: translateY(-6px);
+
+  border-color: var(--accent);
 }
 
 .contact-card h3 {
@@ -48,9 +118,57 @@
   color: var(--accent);
 
   margin-bottom: 12px;
+
+  font-size: 1.2rem;
 }
 
 .contact-card p {
 
   color: var(--text-secondary);
+
+  line-height: 1.6;
+}
+
+/* FEATURED RESUME CARD */
+
+.contact-card:last-child {
+
+  border: 2px solid var(--accent);
+}
+
+/* TABLET */
+
+@media (max-width: 992px) {
+
+  .contact-focus {
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 576px) {
+
+  .contact-section {
+
+    padding: 40px 0 60px;
+  }
+
+  .contact-intro {
+
+    font-size: 1rem;
+
+    margin-bottom: 30px;
+  }
+
+  .contact-focus {
+
+    grid-template-columns: 1fr;
+  }
+
+  .contact-card {
+
+    padding: 22px;
+  }
 }

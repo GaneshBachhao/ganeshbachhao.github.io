@@ -1,11 +1,11 @@
 .timeline-section {
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .timeline {
   position: relative;
   max-width: 900px;
-  margin: 60px auto;
+  margin: 24px auto 0;
 }
 
 .timeline::before {
@@ -31,7 +31,7 @@
 
   padding-left: 80px;
 
-  margin-bottom: 50px;
+  margin-bottom: 24px;
 }
 
 .timeline-dot {
