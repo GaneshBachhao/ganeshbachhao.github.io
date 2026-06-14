@@ -23,14 +23,13 @@ const ArchitectureShowcase = () => {
   };
 
   return (
-    <section id="architecture" className="architecture-section">
+    <section id="architecture" className="section architecture-section">
       <div className="container">
         <h2 className="section-title">Architecture Showcase</h2>
 
         <p className="section-subtitle">
-          Selected architecture patterns, cloud-native solutions, AI
-          integrations, distributed systems and governance models from
-          enterprise projects.
+          Cloud-native architectures, AI-powered platforms, distributed systems
+          and governance models designed for enterprise-scale applications.
         </p>
 
         <div className="architecture-grid">
@@ -53,8 +52,14 @@ const ArchitectureShowcase = () => {
 
                 <p>{item.description}</p>
 
+                <div className="architecture-tags">
+                  {item.technologies.map((tech) => (
+                    <span key={tech}>{tech}</span>
+                  ))}
+                </div>
+
                 <button className="architecture-button" type="button">
-                  View Architecture →
+                  View Diagram
                 </button>
               </div>
             </div>

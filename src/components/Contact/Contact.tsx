@@ -2,34 +2,35 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact-section">
+    <section id="contact" className="section contact-section">
       <div className="container">
-        <h2 className="section-title">Let's Build Something Meaningful</h2>
+        <h2 className="section-title">Open to New Opportunities</h2>
 
         <p className="contact-intro">
-          Open to Senior .NET, Azure, Technical Lead, Solution Architect and
-          Cloud Engineering opportunities.
+          Open to Senior .NET, Technical Lead, Cloud Engineering and Solution
+          Delivery opportunities across enterprise software, cloud modernization
+          and AI-powered platforms.
         </p>
 
         <div className="contact-focus">
           <div className="focus-item">
             <span>✓</span>
-            <p>Solution Architecture & System Design</p>
+            <p>Enterprise .NET & Azure Development</p>
           </div>
 
           <div className="focus-item">
             <span>✓</span>
-            <p>Cloud Modernization & Azure Migration</p>
+            <p>Technical Leadership & Team Mentoring</p>
           </div>
 
           <div className="focus-item">
             <span>✓</span>
-            <p>Enterprise .NET & Angular Engineering</p>
+            <p>Cloud Modernization & Platform Engineering</p>
           </div>
 
           <div className="focus-item">
             <span>✓</span>
-            <p>AI-Powered Enterprise Solutions</p>
+            <p>AI-Powered Business Solutions</p>
           </div>
         </div>
 
@@ -45,7 +46,10 @@ const Contact = () => {
             }}
           >
             <h3>📧 Email</h3>
-            <p>ganesh.bachhao@gmail.com</p>
+
+            <p className="contact-title">Direct Hiring Discussions</p>
+
+            <p className="contact-description">ganesh.bachhao@gmail.com</p>
           </a>
 
           <a
@@ -61,7 +65,12 @@ const Contact = () => {
             }}
           >
             <h3>💼 LinkedIn</h3>
-            <p>Professional Network</p>
+
+            <p className="contact-title">Professional Network</p>
+
+            <p className="contact-description">
+              Career opportunities and professional networking
+            </p>
           </a>
 
           <a
@@ -77,14 +86,19 @@ const Contact = () => {
             }}
           >
             <h3>💻 GitHub</h3>
-            <p>Projects & Architecture Samples</p>
+
+            <p className="contact-title">Technical Portfolio</p>
+
+            <p className="contact-description">
+              Projects, technical solutions and code samples
+            </p>
           </a>
 
           <a
             href="/resume/Ganesh_Bachhao_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="contact-card"
+            className="contact-card resume-card"
             onClick={() => {
               window.gtag?.("event", "resume_download", {
                 event_category: "resume",
@@ -93,8 +107,23 @@ const Contact = () => {
             }}
           >
             <h3>📄 Resume</h3>
-            <p>Download Latest CV</p>
+
+            <p className="contact-title">Senior .NET & Technology Lead CV</p>
+
+            <p className="contact-description">
+              Download the latest version of my resume
+            </p>
           </a>
+
+          <div className="contact-card location-card">
+            <h3>📍 Location</h3>
+
+            <p className="contact-title">Pune, India</p>
+
+            <p className="contact-description">
+              (Open to remote opportunities)
+            </p>
+          </div>
         </div>
       </div>
     </section>

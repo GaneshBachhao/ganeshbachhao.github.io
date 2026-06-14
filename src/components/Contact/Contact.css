@@ -1,91 +1,109 @@
 .contact-section {
-
-  padding: 56px 0 64px;
-
   background: var(--bg-secondary);
 }
 
-/* INTRO */
+/* ==========================================
+   INTRO
+========================================== */
 
 .contact-intro {
-
   max-width: 900px;
 
-  margin: 0 auto 20px;
+  margin: 0 auto 40px;
 
   text-align: center;
 
-  font-size: 1.1rem;
+  font-size: 1.05rem;
 
   line-height: 1.8;
 
-  color: var(--text-primary);
+  color: var(--text-secondary);
 }
 
-/* FOCUS AREAS */
+/* ==========================================
+   FOCUS AREAS
+========================================== */
 
 .contact-focus {
-
-  display: grid;
-
-  grid-template-columns:
-    repeat(auto-fit, minmax(280px, 1fr));
-
-  gap: 18px;
-
-  margin-bottom: 24px;
-}
-
-.focus-item {
-
-  display: flex;
-
-  align-items: center;
-
-  gap: 12px;
-
-  background: var(--card-bg);
-
-  border: 1px solid var(--card-border);
-
-  border-radius: 14px;
-
-  padding: 18px 20px;
-
-  box-shadow: var(--shadow);
-}
-
-.focus-item span {
-
-  color: var(--accent);
-
-  font-size: 1.2rem;
-
-  font-weight: 700;
-}
-
-.focus-item p {
-
-  margin: 0;
-
-  color: var(--text-primary);
-
-  font-weight: 500;
-}
-
-/* CONTACT CARDS */
-
-.contact-grid {
-
   display: grid;
 
   grid-template-columns:
     repeat(auto-fit, minmax(260px, 1fr));
 
-  gap: 24px;
+  gap: 18px;
+
+  margin-bottom: 40px;
+}
+
+.focus-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  border-radius: 16px;
+
+  padding: 18px 20px;
+
+  box-shadow: var(--shadow);
+
+  transition: all 0.3s ease;
+}
+
+.focus-item:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--accent);
+}
+
+.focus-item span {
+  color: var(--accent);
+
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+.focus-item p {
+  margin: 0;
+
+  color: var(--text-primary);
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+/* ==========================================
+   CONTACT CARDS
+========================================== */
+
+.contact-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 20px;
+
+  align-items: stretch;
 }
 
 .contact-card {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  min-height: 180px;
 
   background: var(--card-bg);
 
@@ -93,7 +111,7 @@
 
   border-radius: 20px;
 
-  padding: 28px;
+  padding: 24px;
 
   text-align: center;
 
@@ -107,68 +125,103 @@
 }
 
 .contact-card:hover {
-
   transform: translateY(-6px);
 
   border-color: var(--accent);
 }
 
 .contact-card h3 {
-
   color: var(--accent);
 
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 
-  font-size: 1.2rem;
+  font-size: 1.05rem;
 }
 
-.contact-card p {
+.contact-title {
+  font-weight: 600;
 
+  color: var(--text-primary);
+
+  margin-bottom: 10px;
+
+  line-height: 1.5;
+}
+
+.contact-description {
   color: var(--text-secondary);
 
-  line-height: 1.6;
+  line-height: 1.7;
+
+  font-size: 0.95rem;
 }
 
-/* FEATURED RESUME CARD */
+/* ==========================================
+   SPECIAL CARDS
+========================================== */
 
-.contact-card:last-child {
-
+.resume-card {
   border: 2px solid var(--accent);
 }
 
-/* TABLET */
+.resume-card:hover {
+  box-shadow:
+    0 10px 30px rgba(0, 120, 212, 0.18);
+}
+
+.location-card {
+  background:
+    linear-gradient(
+      180deg,
+      var(--card-bg) 0%,
+      rgba(0, 120, 212, 0.04) 100%
+    );
+}
+
+/* ==========================================
+   TABLET
+========================================== */
 
 @media (max-width: 992px) {
-
   .contact-focus {
-
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns:
+      repeat(2, 1fr);
   }
 }
 
-/* MOBILE */
+/* ==========================================
+   MOBILE
+========================================== */
 
-@media (max-width: 576px) {
-
-  .contact-section {
-
-    padding: 40px 0 60px;
+@media (max-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
-  .contact-intro {
+  .contact-card {
+    min-height: auto;
+  }
+}
 
+@media (max-width: 576px) {
+  .contact-intro {
     font-size: 1rem;
 
     margin-bottom: 30px;
   }
 
   .contact-focus {
-
     grid-template-columns: 1fr;
   }
 
   .contact-card {
+    padding: 24px;
+  }
+}
 
-    padding: 22px;
+@media (max-width: 1200px) {
+  .contact-grid {
+    grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
   }
 }

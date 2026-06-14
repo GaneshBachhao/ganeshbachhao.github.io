@@ -33,7 +33,7 @@ const Hero = () => {
         {/* LEFT SIDE */}
 
         <div className="hero-left">
-          <span className="hero-badge">10+ Years Experience</span>
+          <span className="hero-badge">12+ Years Experience</span>
 
           <h1>Ganesh Bachhao</h1>
 
@@ -85,7 +85,7 @@ const Hero = () => {
 
         <div className="hero-right">
           <div className="hero-card">
-            <h3>10+</h3>
+            <h3>12+</h3>
             <p>Years Experience</p>
           </div>
 

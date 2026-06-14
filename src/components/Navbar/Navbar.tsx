@@ -2,23 +2,40 @@ import "./Navbar.css";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import { useEffect, useState } from "react";
 
+const sections = [
+  "projects",
+  "skills",
+  "career",
+  "architecture",
+  "about",
+  "contact",
+];
+
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
 
+  const [activeSection, setActiveSection] = useState("projects");
+
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      setScrolled(window.scrollY > 50);
+
+      const current = sections.findLast((id) => {
+        const section = document.getElementById(id);
+
+        if (!section) return false;
+
+        return window.scrollY >= section.offsetTop - 150;
+      });
+
+      if (current) {
+        setActiveSection(current);
       }
     };
 
     window.addEventListener("scroll", handleScroll);
 
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -28,21 +45,60 @@ const Navbar = () => {
 
         <ul className="nav-links">
           <li>
-            <a href="#about">About</a>
+            <a
+              href="#projects"
+              className={activeSection === "projects" ? "active" : ""}
+            >
+              Projects
+            </a>
           </li>
 
           <li>
-            <a href="#skills">Skills</a>
+            <a
+              href="#skills"
+              className={activeSection === "skills" ? "active" : ""}
+            >
+              Expertise
+            </a>
           </li>
 
           <li>
-            <a href="#projects">Projects</a>
+            <a
+              href="#career"
+              className={activeSection === "career" ? "active" : ""}
+            >
+              Leadership
+            </a>
           </li>
 
           <li>
-            <a href="#contact">Contact</a>
+            <a
+              href="#architecture"
+              className={activeSection === "architecture" ? "active" : ""}
+            >
+              Architecture
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#about"
+              className={activeSection === "about" ? "active" : ""}
+            >
+              About
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#contact"
+              className={activeSection === "contact" ? "active" : ""}
+            >
+              Contact
+            </a>
           </li>
         </ul>
+
         <ThemeToggle />
       </div>
     </nav>

@@ -1,4 +1,5 @@
 import Navbar from "./components/Navbar/Navbar";
+import ScrollProgress from "./components/ScrollProgress/ScrollProgress";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import CareerEvolution from "./components/CareerEvolution/CareerEvolution";
@@ -10,18 +11,19 @@ import Contact from "./components/Contact/Contact";
 import Footer from "./components/Footer/Footer";
 import BackToTop from "./components/BackToTop/BackToTop";
 import ArchitectureShowcase from "./components/ArchitectureShowcase/ArchitectureShowcase";
-import CareerTimeline from "./components/CareerTimeline/CareerTimeline";
+// import CareerTimeline from "./components/CareerTimeline/CareerTimeline";
 // import ArchitecturePrinciples from "./components/ArchitecturePrinciples/ArchitecturePrinciples";
 
 function App() {
   return (
     <>
       <Navbar />
+      <ScrollProgress />
       <Hero />
       <FeaturedProjects />
       <TechnicalExpertise />
       <CareerEvolution />
-      <CareerTimeline />
+      {/* <CareerTimeline /> */}
       {/* <ArchitecturePrinciples /> */}
       <ArchitectureShowcase />
       {/* <TechnologyCarousel />

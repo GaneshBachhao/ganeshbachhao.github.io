@@ -2,42 +2,54 @@ import "./CareerTimeline.css";
 
 const timeline = [
   {
-    year: "2017-2025",
-    title: "Technology Lead To transitioning to Technology Architect",
-    description:
-      "Managed cross-functional teams, architecture decisions, cloud modernization and delivery governance. Driving enterprise architecture, cloud transformation, AI adoption and technology strategy.",
+    period: "2012 – 2017",
+    title: "Software Engineer → Senior Software Engineer",
+    highlights: [
+      "Enterprise Web Applications",
+      ".NET Development",
+      "REST API Development",
+      "SQL Performance Optimization",
+    ],
   },
   {
-    year: "2012-2017",
-    title: "Software Engineer To Senior Software Engineer",
-    description:
-      "Started career building enterprise web applications using .NET technologies, SQL Server and frontend frameworks. Led development of scalable APIs, performance optimization initiatives and enterprise integrations.",
+    period: "2017 – 2025",
+    title: "Technology Lead → Technology Architect",
+    highlights: [
+      "Cloud Modernization",
+      "Azure Architecture",
+      "AI & OpenAI Solutions",
+      "Technical Leadership",
+    ],
   },
 ];
 
 const CareerTimeline = () => {
   return (
-    <section id="timeline" className="timeline-section">
+    <section id="timeline" className="section timeline-section">
       <div className="container">
         <h2 className="section-title">Career Journey</h2>
 
         <p className="section-subtitle">
-          Evolution from software engineer to technology leadership and solution
-          architecture.
+          Professional growth from software engineering to enterprise
+          architecture, cloud transformation and technology leadership.
         </p>
 
-        <div className="timeline">
-          {timeline.map((item) => (
-            <div key={item.year} className="timeline-item">
-              <div className="timeline-dot" />
+        <div className="career-path">
+          {timeline.map((item, index) => (
+            <div key={item.period} className="career-card">
+              <span className="career-period">{item.period}</span>
 
-              <div className="timeline-content">
-                <span className="timeline-year">{item.year}</span>
+              <h3>{item.title}</h3>
 
-                <h3>{item.title}</h3>
+              <ul>
+                {item.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
 
-                <p>{item.description}</p>
-              </div>
+              {index < timeline.length - 1 && (
+                <div className="career-arrow">→</div>
+              )}
             </div>
           ))}
         </div>
