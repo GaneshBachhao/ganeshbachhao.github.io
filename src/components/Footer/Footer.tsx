@@ -11,7 +11,7 @@ const Footer = () => {
 
           <p>
             Open to Senior .NET, Azure, Technical Lead and Solution Architect
-            opportunities in Germany.
+            opportunities.
           </p>
         </div>
 
