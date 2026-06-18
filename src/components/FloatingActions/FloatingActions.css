@@ -1,0 +1,105 @@
+.floating-actions {
+  position: fixed;
+
+  right: 24px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  z-index: 999;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* BUTTON */
+
+.floating-action {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  border-radius: 16px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  color: var(--accent);
+
+  text-decoration: none;
+
+  box-shadow: var(--shadow);
+
+  overflow: hidden;
+
+  transition: all 0.3s ease;
+}
+
+/* ICON */
+
+.floating-action svg {
+  font-size: 1.2rem;
+
+  flex-shrink: 0;
+}
+
+/* LABEL */
+
+.floating-action span {
+  max-width: 0;
+
+  opacity: 0;
+
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  transition: all 0.3s ease;
+}
+
+/* HOVER EXPAND */
+
+.floating-action:hover {
+  width: 160px;
+
+  justify-content: flex-start;
+
+  gap: 12px;
+
+  padding: 0 18px;
+
+  border-color: var(--accent);
+
+  transform: translateX(-6px);
+}
+
+.floating-action:hover span {
+  max-width: 120px;
+
+  opacity: 1;
+}
+
+/* RESUME CTA */
+
+.resume-action {
+  background: var(--accent);
+
+  color: white;
+
+  border-color: var(--accent);
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .floating-actions {
+    display: none;
+  }
+}

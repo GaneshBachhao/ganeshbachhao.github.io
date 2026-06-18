@@ -7,33 +7,34 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
 
         <p className="section-subtitle">
-          Combining engineering depth, architecture thinking and delivery
-          leadership to build scalable enterprise solutions.
+          Combining engineering depth, technical leadership, and cloud expertise
+          to deliver scalable enterprise solutions.
         </p>
 
         <div className="about-grid">
           <div className="about-content">
             <p>
-              Technology Professional with 12+ years of experience designing,
-              developing, and delivering enterprise software solutions across
-              E-Commerce, Manufacturing, and Healthcare domains. Strong
-              background in .NET, Azure, Angular, cloud modernization, API
-              development, and distributed systems.
+              I am a IT Professional with over 12+ years of experience building
+              enterprise software on the Microsoft technology stack. My
+              background combines hands-on engineering with technical
+              leadership, enabling me to contribute across solution design,
+              architecture decisions, and software delivery.
             </p>
 
             <p>
-              Experienced in leading engineering teams, driving technical
-              decisions, improving development practices, and delivering
-              scalable business-critical applications. Passionate about solving
-              complex technical challenges, mentoring developers, and building
-              maintainable solutions that align technology with business goals.
+              My core expertise lies in .NET, Azure, distributed systems, cloud
+              modernization, and enterprise application development. Over the
+              years, I have designed and delivered business-critical solutions,
+              integrated complex platforms, and helped teams adopt modern
+              engineering practices.
             </p>
 
             <p>
-              Currently focused on modern cloud-native development, enterprise
-              integrations, AI-powered solutions, and technical leadership while
-              remaining actively involved in architecture, coding, code reviews,
-              and solution delivery.
+              I enjoy solving complex technical challenges, improving system
+              reliability, mentoring engineers, and turning business
+              requirements into practical technology solutions. My focus is on
+              building maintainable systems that balance business needs,
+              scalability, and long-term sustainability.
             </p>
 
             <div className="about-metrics">
@@ -48,13 +49,25 @@ const About = () => {
               </div>
 
               <div className="metric-card">
-                <h3>.Net + Azure</h3>
-                <span>Cloud Expertise</span>
+                <h3>.NET + Azure</h3>
+                <span>Core Technology Stack</span>
               </div>
 
               <div className="metric-card">
                 <h3>AI</h3>
-                <span>Modern Solutions</span>
+                <span>Azure OpenAI & AI Search</span>
+              </div>
+
+              <div className="metric-card">
+                <h3>3 Domains</h3>
+                <span>Healthcare • Manufacturing • E-Commerce</span>
+              </div>
+
+              <div className="metric-card">
+                <h3>IT Professional</h3>
+                <span>
+                  Design, Develop, Integrate, Deliver, Lead & Transform
+                </span>
               </div>
             </div>
           </div>
@@ -69,26 +82,26 @@ const About = () => {
             </div>
 
             <div className="highlight-card">
-              <h3>Architecture Leadership</h3>
+              <h3>Architecture & Design</h3>
               <p>
-                Driving solution design, architecture governance, technical
-                standards and long-term technology strategy.
+                Designing reliable, maintainable, and scalable solutions using
+                modern engineering and architectural practices.
               </p>
             </div>
 
             <div className="highlight-card">
-              <h3>Engineering Excellence</h3>
+              <h3>Technical Leadership</h3>
               <p>
-                Mentoring teams, improving delivery quality and establishing
-                sustainable engineering practices.
+                Mentoring engineers, improving delivery quality, and helping
+                teams build sustainable engineering practices.
               </p>
             </div>
 
             <div className="highlight-card">
-              <h3>Enterprise AI Adoption</h3>
+              <h3>Applied AI</h3>
               <p>
-                Applying Azure OpenAI and AI Search to solve real business
-                problems through practical AI solutions.
+                Leveraging Azure OpenAI and AI Search to build practical
+                AI-powered business solutions and automation workflows.
               </p>
             </div>
           </div>

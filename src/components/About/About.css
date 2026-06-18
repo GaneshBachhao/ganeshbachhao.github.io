@@ -12,10 +12,15 @@
   align-items: start;
 }
 
+/* ==========================
+   LEFT CONTENT
+========================== */
+
 .about-content {
   display: flex;
 
-  flex-direction: column; 
+  flex-direction: column;
+
   gap: 22px;
 }
 
@@ -27,16 +32,18 @@
   font-size: 1.05rem;
 }
 
-/* METRICS */
+/* ==========================
+   RECRUITER QUICK FACTS
+========================== */
 
 .about-metrics {
   display: grid;
 
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-  gap: 16px;
+  gap: 14px;
 
-  margin-top: 12px;
+  margin-top: 10px;
 }
 
 .metric-card {
@@ -46,17 +53,37 @@
 
   border-radius: 16px;
 
-  padding: 20px;
+  padding: 16px 14px;
 
   text-align: center;
 
   box-shadow: var(--shadow);
+
+  transition: all 0.3s ease;
+
+  min-height: 105px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.metric-card:hover {
+  transform: translateY(-4px);
+
+  border-color: var(--accent);
 }
 
 .metric-card h3 {
   color: var(--accent);
 
-  font-size: 1.8rem;
+  font-size: 1.2rem;
+
+  font-weight: 700;
+
+  line-height: 1.3;
 
   margin-bottom: 6px;
 }
@@ -64,10 +91,14 @@
 .metric-card span {
   color: var(--text-secondary);
 
-  font-size: 0.9rem;
+  font-size: 0.82rem;
+
+  line-height: 1.5;
 }
 
-/* RIGHT SIDE */
+/* ==========================
+   RIGHT SIDE
+========================== */
 
 .about-highlights {
   display: grid;
@@ -91,6 +122,8 @@
 
 .highlight-card:hover {
   transform: translateY(-4px);
+
+  border-color: var(--accent);
 }
 
 .highlight-card h3 {
@@ -107,22 +140,58 @@
   line-height: 1.7;
 }
 
-/* TABLET */
+/* ==========================
+   TABLET
+========================== */
 
 @media (max-width: 992px) {
   .about-grid {
     grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .about-metrics {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* MOBILE */
+/* ==========================
+   MOBILE
+========================== */
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .about-metrics {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
   }
 
+  .metric-card {
+    min-height: 95px;
+
+    padding: 14px 10px;
+  }
+
+  .metric-card h3 {
+    font-size: 1rem;
+  }
+
+  .metric-card span {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 576px) {
   .about-content p {
     font-size: 1rem;
+  }
+
+  .about-metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-card {
+    padding: 20px;
   }
 }

@@ -7,9 +7,9 @@ const Contact = () => {
         <h2 className="section-title">Open to New Opportunities</h2>
 
         <p className="contact-intro">
-          Open to Senior .NET, Technical Lead, Cloud Engineering and Solution
-          Delivery opportunities across enterprise software, cloud modernization
-          and AI-powered platforms.
+          Actively exploring Senior .NET, Azure, and Technical Leadership
+          opportunities across Global organizations. Open to relocation, hybrid,
+          and remote roles.
         </p>
 
         <div className="contact-focus">

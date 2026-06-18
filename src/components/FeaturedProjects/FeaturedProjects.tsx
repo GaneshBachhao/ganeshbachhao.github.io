@@ -48,7 +48,7 @@ const FeaturedProjects = () => {
                 className="project-button"
                 onClick={() => setSelectedProject(project)}
               >
-                View Architecture Case Study
+                View Project Details
               </button>
             </div>
           ))}

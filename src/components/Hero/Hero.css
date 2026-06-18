@@ -1,6 +1,6 @@
 .hero {
-  padding: 72px 40px 40px;
-  background: var(--bg-color);
+  padding: 110px 40px 60px;
+  background: var(--bg-primary);
 }
 
 .hero-container {
@@ -11,13 +11,12 @@
   grid-template-columns: 2fr 1fr;
 
   gap: 60px;
-
   align-items: center;
 }
 
-/* ===========================
+/* ==========================
    LEFT SECTION
-=========================== */
+========================== */
 
 .hero-left {
   display: flex;
@@ -43,27 +42,25 @@
 
 .hero-left h1 {
   font-size: 4.5rem;
-
   font-weight: 800;
-
-  color: var(--accent);
 
   line-height: 1.05;
 
-  margin-bottom: 16px;
+  color: var(--accent);
+
+  margin-bottom: 14px;
 }
 
 .hero-left h2 {
   font-size: 2rem;
-
   font-weight: 700;
 
-  color: var(--accent);
+  color: var(--text-primary);
 
   margin-bottom: 24px;
 }
 
-/* Dynamic Title */
+/* Dynamic title */
 
 .dynamic-title {
   min-height: 52px;
@@ -84,20 +81,56 @@
 }
 
 .hero-description {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 
-  line-height: 1.8;
+  line-height: 1.9;
 
   color: var(--text-secondary);
 
   max-width: 760px;
 
-  margin-bottom: 35px;
+  margin-bottom: 28px;
 }
 
-/* ===========================
+/* ==========================
+   TAGS
+========================== */
+
+.hero-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin-bottom: 30px;
+}
+
+.hero-tags span {
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: var(--card-bg);
+
+  border: 1px solid var(--card-border);
+
+  color: var(--text-primary);
+
+  font-size: 0.9rem;
+
+  transition: all 0.3s ease;
+}
+
+.hero-tags span:hover {
+  border-color: var(--accent);
+
+  color: var(--accent);
+}
+
+/* ==========================
    BUTTONS
-=========================== */
+========================== */
 
 .hero-buttons {
   display: flex;
@@ -110,13 +143,13 @@
 }
 
 .btn-primary {
-  padding: 14px 28px;
-
-  border-radius: 12px;
-
   background: var(--accent);
 
   color: white;
+
+  padding: 14px 28px;
+
+  border-radius: 12px;
 
   text-decoration: none;
 
@@ -135,23 +168,38 @@
   text-decoration: none;
 
   font-weight: 600;
-
-  transition: all 0.3s ease;
 }
 
 .btn-link:hover {
   text-decoration: underline;
 }
 
-/* ===========================
+/* ==========================
    RIGHT SECTION
-=========================== */
+========================== */
 
 .hero-right {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
 
   gap: 16px;
+}
+
+.hero-right-header {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  font-size: 1rem;
+
+  font-weight: 700;
+
+  color: var(--accent);
+
+  margin-bottom: 8px;
+
+  letter-spacing: 0.5px;
 }
 
 .hero-card {
@@ -159,7 +207,7 @@
 
   border: 1px solid var(--card-border);
 
-  border-radius: 20px;
+  border-radius: 18px;
 
   padding: 24px;
 
@@ -172,12 +220,14 @@
 
 .hero-card:hover {
   transform: translateY(-6px);
+
+  border-color: var(--accent);
 }
 
 .hero-card h3 {
   color: var(--accent);
 
-  font-size: 1.9rem;
+  font-size: 1.6rem;
 
   font-weight: 700;
 
@@ -187,16 +237,16 @@
 .hero-card p {
   color: var(--text-secondary);
 
-  font-size: 1rem;
+  line-height: 1.5;
 }
 
-/* ===========================
+/* ==========================
    TABLET
-=========================== */
+========================== */
 
 @media (max-width: 992px) {
   .hero {
-    padding: 92px 30px 46px;
+    padding: 140px 30px 50px;
   }
 
   .hero-container {
@@ -222,12 +272,8 @@
     justify-content: center;
   }
 
-  .hero-right {
-    display: grid;
-
-    grid-template-columns: repeat(2, 1fr);
-
-    gap: 20px;
+  .hero-tags {
+    justify-content: center;
   }
 
   .hero-left h1 {
@@ -239,13 +285,23 @@
   }
 }
 
-/* ===========================
+/* ==========================
    MOBILE
-=========================== */
+========================== */
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+  }
+
+  .hero-right {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media (max-width: 576px) {
   .hero {
-    padding: 84px 20px 36px;
+    padding: 120px 20px 40px;
   }
 
   .hero-left h1 {
@@ -275,11 +331,27 @@
     text-align: center;
   }
 
+  /* Recruiter facts stay side-by-side on mobile */
+
   .hero-right {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 12px;
   }
 
   .hero-card {
-    padding: 18px;
+    padding: 16px;
+  }
+
+  .hero-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero-card p {
+    font-size: 0.85rem;
+  }
+
+  .hero-tags {
+    justify-content: center;
   }
 }

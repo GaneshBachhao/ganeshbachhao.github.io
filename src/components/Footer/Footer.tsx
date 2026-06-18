@@ -5,13 +5,14 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-content">
         <div className="footer-brand">
-          <h3>Ganesh Bachhao</h3>
-
-          <p>Technology Lead • .NET • Azure • AI Solutions</p>
-
+          <p>.NET • Angular • Azure • AI Solutions</p>
           <p>
-            Open to Senior .NET, Azure, Technical Lead and Solution Architect
-            opportunities.
+            Turning business requirements into scalable and maintainable
+            software solutions.
+          </p>
+          <p>
+            Senior .NET Engineer • Technology Lead • Solution Architect
+            <p>Remote • Hybrid • Relocation</p>
           </p>
         </div>
 

@@ -3,14 +3,14 @@ import "./Hero.css";
 
 const titles = [
   "Senior Full Stack Engineer",
-  ".NET Backend Developer",
   "Senior .NET Developer",
-  ".NET & Azure Specialist",
-  "Cloud Solution Designer",
-  "AI Solutions Engineer",
-  ".NET Gen AI Developer",
+  ".NET Backend Developer",
   "Technology Lead",
-  ".NET/Technology Architect",
+  ".NET & Azure Specialist",
+  "Cloud Modernization Engineer",
+  "Enterprise Application Developer",
+  "Azure Solutions Developer",
+  "Applied AI Developer",
 ];
 
 const Hero = () => {
@@ -40,10 +40,25 @@ const Hero = () => {
           <h2 className="dynamic-title">{currentTitle}</h2>
 
           <p className="hero-description">
-            Building scalable enterprise systems, cloud-native applications,
-            distributed architectures and AI-powered solutions across
-            E-Commerce, Manufacturing and Healthcare domains.
+            Over the last 12+ years, I've designed, built, and modernized
+            enterprise applications using .NET and Azure. My experience spans
+            backend engineering, cloud modernization, technical leadership, and
+            AI-enabled solutions, with a strong focus on delivering scalable,
+            maintainable, and business-critical systems.
+            <span>Open to Remote, Hybrid Opportunities</span>
           </p>
+
+          {/* Recruiter Tags */}
+
+          <div className="hero-tags">
+            <span>.NET</span>
+            <span>Azure</span>
+            <span>Angular</span>
+            <span>RESTful API</span>
+            <span>Cloud Migration</span>
+            <span>Azure OpenAI</span>
+            <span>Tech Leadership</span>
+          </div>
 
           <div className="hero-buttons">
             <a
@@ -84,6 +99,8 @@ const Hero = () => {
         {/* RIGHT SIDE */}
 
         <div className="hero-right">
+          <div className="hero-right-header">Quick Facts</div>
+
           <div className="hero-card">
             <h3>12+</h3>
             <p>Years Experience</p>
@@ -96,7 +113,7 @@ const Hero = () => {
 
           <div className="hero-card">
             <h3>.NET + Azure</h3>
-            <p>Technology Focus</p>
+            <p>Primary Technology Focus</p>
           </div>
 
           <div className="hero-card">

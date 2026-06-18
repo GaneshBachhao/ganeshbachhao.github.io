@@ -13,6 +13,7 @@ import BackToTop from "./components/BackToTop/BackToTop";
 import ArchitectureShowcase from "./components/ArchitectureShowcase/ArchitectureShowcase";
 // import CareerTimeline from "./components/CareerTimeline/CareerTimeline";
 // import ArchitecturePrinciples from "./components/ArchitecturePrinciples/ArchitecturePrinciples";
+import FloatingActions from "./components/FloatingActions/FloatingActions";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       <Contact />
       <Footer />
       <BackToTop />
+      <FloatingActions />
     </>
   );
 }
