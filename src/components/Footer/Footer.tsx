@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="container footer-content">
         <div className="footer-brand">
-          <p>.NET • Angular • Azure • AI Solutions</p>
+          <p>.NET • Angular • Azure • AI Solutions • AI Assisted Development</p>
           <p>
             Turning business requirements into scalable and maintainable
             software solutions.

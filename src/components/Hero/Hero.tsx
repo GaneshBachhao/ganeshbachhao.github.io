@@ -43,8 +43,8 @@ const Hero = () => {
             Over the last 12+ years, I've designed, built, and modernized
             enterprise applications using .NET and Azure. My experience spans
             backend engineering, cloud modernization, technical leadership, and
-            AI-enabled solutions, with a strong focus on delivering scalable,
-            maintainable, and business-critical systems.
+            AI-enabled solutions, with AI-assisted development, a strong focus
+            on delivering scalable, maintainable, and business-critical systems.
             <span>Open to Remote, Hybrid Opportunities</span>
           </p>
 

@@ -32,9 +32,9 @@ const About = () => {
             <p>
               I enjoy solving complex technical challenges, improving system
               reliability, mentoring engineers, and turning business
-              requirements into practical technology solutions. My focus is on
-              building maintainable systems that balance business needs,
-              scalability, and long-term sustainability.
+              requirements into practical technology solutions with AI-assisted
+              development. My focus is on building maintainable systems that
+              balance business needs, scalability, and long-term sustainability.
             </p>
 
             <div className="about-metrics">
