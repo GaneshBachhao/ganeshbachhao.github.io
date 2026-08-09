@@ -5,6 +5,7 @@ import About from "./components/About/About";
 import CareerEvolution from "./components/CareerEvolution/CareerEvolution";
 import TechnicalExpertise from "./components/Skills/TechnicalExpertise";
 import FeaturedProjects from "./components/FeaturedProjects/FeaturedProjects";
+import EngineeringImpact from "./components/EngineeringImpact/EngineeringImpact";
 // import TechnologyCarousel from "./components/TechnologyCarousel/TechnologyCarousel";
 // import ArchitectureGallery from "./components/ArchitectureGallery/ArchitectureGallery";
 import Contact from "./components/Contact/Contact";
@@ -22,15 +23,16 @@ function App() {
       <Navbar />
       <ScrollProgress />
       <Hero />
-      <FeaturedProjects />
+      <EngineeringImpact />
+      <About />
       <TechnicalExpertise />
+      <FeaturedProjects />
       <CareerEvolution />
       {/* <CareerTimeline /> */}
       {/* <ArchitecturePrinciples /> */}
       <ArchitectureShowcase />
       {/* <TechnologyCarousel />
       <ArchitectureGallery /> */}
-      <About />
       <AIInnovation />
       <Contact />
       <Footer />

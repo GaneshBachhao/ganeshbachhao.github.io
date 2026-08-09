@@ -50,40 +50,34 @@
   position: relative;
 }
 
-.featured-skill::before {
-
-  content: "PRIMARY";
-
-  position: absolute;
-
-  top: -12px;
-
-  right: 20px;
-
-  background: var(--accent);
-
-  color: white;
-
-  padding: 4px 10px;
-
+.skill-label {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 4px 9px;
   border-radius: 999px;
-
-  font-size: 11px;
-
-  font-weight: 600;
-
-  letter-spacing: 0.5px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
 }
+
 
 .skill-card h3 {
 
   color: var(--accent);
 
-  margin-bottom: 18px;
+  margin-bottom: 10px;
 
   font-size: 1.25rem;
 
   font-weight: 700;
+}
+
+.skill-description {
+  margin-bottom: 18px;
+  color: var(--text-secondary);
+  line-height: 1.7;
 }
 
 .skill-tags {
@@ -97,11 +91,11 @@
 
 .skill-tags span {
 
-  background: rgba(0, 120, 212, 0.10);
+  background: var(--accent-soft);
 
   color: var(--accent);
 
-  border: 1px solid rgba(0, 120, 212, 0.20);
+  border: 1px solid var(--card-border);
 
   padding: 8px 14px;
 

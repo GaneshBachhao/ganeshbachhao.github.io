@@ -15,9 +15,9 @@ const AIInnovation = () => {
           {/* CASE STUDY 1 */}
 
           <div className="ai-card">
-            <span className="ai-badge">Enterprise Knowledge Assistant</span>
+            <span className="ai-badge">Portfolio Solution · Enterprise Knowledge</span>
 
-            <h3>AI-Powered Document Discovery Platform</h3>
+            <h3>Enterprise Knowledge &amp; Document Intelligence</h3>
 
             <div className="ai-section-block">
               <h4>Business Challenge</h4>
@@ -59,7 +59,7 @@ const AIInnovation = () => {
           {/* CASE STUDY 2 */}
 
           <div className="ai-card">
-            <span className="ai-badge">Operational Intelligence</span>
+            <span className="ai-badge">Portfolio Solution · Operational Intelligence</span>
 
             <h3>AI-Powered Incident Resolution Assistant</h3>
 
@@ -78,7 +78,7 @@ const AIInnovation = () => {
               <h4>Solution</h4>
 
               <p>
-                Designed an AI assistant capable of analyzing incident details,
+                Designed an AI assistant concept capable of analyzing incident details,
                 retrieving similar historical cases, correlating operational
                 data and suggesting likely root causes along with recommended
                 resolution actions.
@@ -107,9 +107,9 @@ const AIInnovation = () => {
           {/* CASE STUDY 3 */}
 
           <div className="ai-card">
-            <span className="ai-badge">Agent-Based Automation</span>
+            <span className="ai-badge">Portfolio Exploration · Workflow Automation</span>
 
-            <h3>Agent-Based Process Automation</h3>
+            <h3>AI-Assisted Workflow Automation</h3>
 
             <div className="ai-section-block">
               <h4>Business Challenge</h4>
@@ -125,9 +125,9 @@ const AIInnovation = () => {
               <h4>Solution</h4>
 
               <p>
-                Evaluated AI agents, tool-calling patterns and workflow
-                automation approaches capable of orchestrating tasks across
-                enterprise applications.
+                Evaluated AI-assisted workflow patterns, including tool calling and controlled
+                orchestration, to understand where repetitive enterprise tasks could
+                be supported while keeping human approval in the workflow.
               </p>
             </div>
 
@@ -135,13 +135,13 @@ const AIInnovation = () => {
               <h4>Business Outcome</h4>
 
               <p>
-                Demonstrated opportunities for intelligent automation, reduced
-                operational overhead and improved process efficiency.
+                Demonstrated practical opportunities for intelligent automation while keeping
+                workflow control, validation and human oversight explicit in the design.
               </p>
             </div>
 
             <div className="ai-tags">
-              <span>AI Agents</span>
+              <span>AI-Assisted Workflows</span>
               <span>Tool Calling</span>
               <span>Workflow Automation</span>
             </div>

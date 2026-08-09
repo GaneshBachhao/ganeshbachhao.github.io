@@ -1,133 +1,83 @@
 import "./TechnicalExpertise.css";
 
+const expertise = [
+  {
+    title: "Enterprise Backend Engineering",
+    description:
+      "Designing and delivering enterprise APIs and backend services using C#, .NET and ASP.NET Core, with attention to maintainability, performance and reliable integration.",
+    tags: ["C#", ".NET", "ASP.NET Core", "REST APIs", "Entity Framework", "Distributed Systems"],
+    featured: true,
+  },
+  {
+    title: "Cloud & Modernization",
+    description:
+      "Modernizing legacy applications and building Azure-based solutions with a focus on controlled migration, deployment automation and operational visibility.",
+    tags: ["Azure App Service", "Azure Functions", "Service Bus", "Key Vault", "Azure Storage", "Application Insights"],
+  },
+  {
+    title: "Architecture & Distributed Systems",
+    description:
+      "Designing service-oriented and distributed solutions with deliberate decisions around scalability, reliability, security and operational trade-offs.",
+    tags: ["Microservices", "Clean Architecture", "DDD", "CQRS", "Event-Driven Design", "SOLID"],
+  },
+  {
+    title: "Data & Integration",
+    description:
+      "Building high-volume processing workflows, APIs and integrations that support reliable data movement, validation, recovery and performance optimisation.",
+    tags: ["SQL Server", "ETL", "Async Processing", "REST APIs", "Data Validation", "Performance Tuning"],
+  },
+  {
+    title: "AI & Intelligent Automation",
+    description:
+      "Applying Azure AI and Azure OpenAI capabilities to practical enterprise scenarios such as document processing, knowledge retrieval and workflow assistance.",
+    tags: ["Azure OpenAI", "AI Search", "RAG", "Semantic Retrieval", "Prompt Engineering", "GitHub Copilot"],
+  },
+  {
+    title: "DevOps & Delivery",
+    description:
+      "Improving delivery consistency through CI/CD automation, source control, release practices and engineering collaboration across enterprise teams.",
+    tags: ["Azure DevOps", "GitHub", "CI/CD", "Release Management", "Agile Delivery"],
+  },
+  {
+    title: "Security & Governance",
+    description:
+      "Applying practical API security, secure configuration and architecture governance to enterprise solutions and shared engineering platforms.",
+    tags: ["OAuth2", "JWT", "Secure Configuration", "API Security", "Architecture Governance"],
+  },
+  {
+    title: "Technical Leadership",
+    description:
+      "Providing hands-on technical direction through architecture reviews, mentoring, code reviews, engineering standards and cross-functional planning.",
+    tags: ["Technical Leadership", "Code Reviews", "Mentoring", "Technical Planning", "Stakeholder Collaboration"],
+  },
+];
+
 const TechnicalExpertise = () => {
   return (
     <section id="skills" className="skills-section">
       <div className="container">
-        <h2 className="section-title">Technology Expertise</h2>
-
+        <h2 className="section-title">Engineering Expertise</h2>
         <p className="section-subtitle">
-          Enterprise software engineering, cloud modernization, solution
-          architecture, AI integration, and technical leadership across the
-          Microsoft technology ecosystem.
+          A capability-led view of the engineering areas I work across, with the
+          technologies underneath each area providing the implementation context.
         </p>
 
         <div className="skills-grid">
-          {/* Backend */}
-
-          <div className="skill-card featured-skill">
-            <h3>⚙️ Enterprise Backend Engineering</h3>
-
-            <div className="skill-tags">
-              <span>C#</span>
-              <span>.NET</span>
-              <span>ASP.NET Core</span>
-              <span>REST APIs</span>
-              <span>Entity Framework</span>
-              <span>Distributed Systems</span>
-            </div>
-          </div>
-
-          {/* Frontend */}
-
-          <div className="skill-card">
-            <h3>🎨 Frontend Engineering</h3>
-
-            <div className="skill-tags">
-              <span>Angular</span>
-              <span>TypeScript</span>
-              <span>RxJS</span>
-              <span>Component Architecture</span>
-              <span>HTML5</span>
-              <span>CSS3</span>
-            </div>
-          </div>
-
-          {/* Azure */}
-
-          <div className="skill-card">
-            <h3>☁️ Cloud-Native Azure Solutions</h3>
-
-            <div className="skill-tags">
-              <span>Azure App Service</span>
-              <span>Azure Functions</span>
-              <span>Azure Service Bus</span>
-              <span>Azure Key Vault</span>
-              <span>Azure Storage</span>
-              <span>Application Insights</span>
-            </div>
-          </div>
-          {/* DevOps */}
-
-          <div className="skill-card">
-            <h3>🚀 DevOps & Delivery</h3>
-
-            <div className="skill-tags">
-              <span>Azure DevOps</span>
-              <span>GitHub</span>
-              <span>CI/CD</span>
-              <span>Release Management</span>
-              <span>Agile Delivery</span>
-            </div>
-          </div>
-
-          {/* AI */}
-
-          <div className="skill-card">
-            <h3>🤖 Applied AI Engineering</h3>
-
-            <div className="skill-tags">
-              <span>Azure OpenAI</span>
-              <span>GPT-4 Integration</span>
-              <span>AI Search</span>
-              <span>RAG</span>
-              <span>Prompt Engineering</span>
-              <span>GitHub Copilot</span>
-            </div>
-          </div>
-          {/* Architecture */}
-
-          <div className="skill-card">
-            <h3>🏗️ Solution Architecture</h3>
-
-            <div className="skill-tags">
-              <span>Clean Architecture</span>
-              <span>DDD</span>
-              <span>CQRS</span>
-              <span>Event-Driven Design</span>
-              <span>SOLID Principles</span>
-              <span>Design Patterns</span>
-            </div>
-          </div>
-
-          {/* Security */}
-
-          <div className="skill-card">
-            <h3>🔒 Security & Governance</h3>
-
-            <div className="skill-tags">
-              <span>OAuth2</span>
-              <span>JWT</span>
-              <span>Zero Trust</span>
-              <span>Secure Configuration</span>
-              <span>Architecture Governance</span>
-            </div>
-          </div>
-
-          {/* Leadership */}
-
-          <div className="skill-card">
-            <h3>👥 Leadership & Mentoring</h3>
-
-            <div className="skill-tags">
-              <span>Technical Leadership</span>
-              <span>Code Reviews</span>
-              <span>Technical Mentoring</span>
-              <span>Cross-Functional Planning</span>
-              <span>Stakeholder Collaboration</span>
-              <span>Engineering Standards</span>
-            </div>
-          </div>
+          {expertise.map((item) => (
+            <article
+              className={`skill-card${item.featured ? " featured-skill" : ""}`}
+              key={item.title}
+            >
+              {item.featured && <span className="skill-label">CORE</span>}
+              <h3>{item.title}</h3>
+              <p className="skill-description">{item.description}</p>
+              <div className="skill-tags" aria-label={`${item.title} technologies`}>
+                {item.tags.map((tag) => (
+                  <span key={tag}>{tag}</span>
+                ))}
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>

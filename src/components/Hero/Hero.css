@@ -1,6 +1,7 @@
 .hero {
   padding: 110px 40px 60px;
   background: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .hero-container {
@@ -31,7 +32,7 @@
 
   border-radius: 999px;
 
-  background: rgba(0, 120, 212, 0.1);
+  background: var(--accent-soft);
 
   color: var(--accent);
 
@@ -62,23 +63,6 @@
 
 /* Dynamic title */
 
-.dynamic-title {
-  min-height: 52px;
-
-  animation: titleFade 0.5s ease;
-}
-
-@keyframes titleFade {
-  from {
-    opacity: 0;
-    transform: translateY(8px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 .hero-description {
   font-size: 1.1rem;
@@ -89,7 +73,15 @@
 
   max-width: 760px;
 
-  margin-bottom: 28px;
+  margin-bottom: 14px;
+}
+
+.hero-opportunity {
+  max-width: 760px;
+  margin-bottom: 26px;
+  color: var(--text-primary);
+  font-weight: 600;
+  line-height: 1.7;
 }
 
 /* ==========================
@@ -310,10 +302,6 @@
 
   .hero-left h2 {
     font-size: 1.3rem;
-  }
-
-  .dynamic-title {
-    min-height: 40px;
   }
 
   .hero-description {

@@ -7,67 +7,59 @@ const About = () => {
         <h2 className="section-title">About Me</h2>
 
         <p className="section-subtitle">
-          Combining engineering depth, technical leadership, and cloud expertise
-          to deliver scalable enterprise solutions.
+          Combining hands-on engineering, technical leadership and cloud expertise
+          to build enterprise systems that are scalable, maintainable and practical.
         </p>
 
         <div className="about-grid">
           <div className="about-content">
             <p>
-              I am a IT Professional with over 12+ years of experience building
-              enterprise software on the Microsoft technology stack. My
-              background combines hands-on engineering with technical
-              leadership, enabling me to contribute across solution design,
-              architecture decisions, and software delivery.
+              I am a Senior .NET and Azure Engineer and Technology Lead with 12+
+              years of experience designing, modernizing and delivering enterprise
+              applications. My work has covered e-commerce, manufacturing and
+              healthcare, with a strong focus on backend engineering, APIs, cloud
+              platforms, distributed systems and reliable data processing.
             </p>
 
             <p>
-              My core expertise lies in .NET, Azure, distributed systems, cloud
-              modernization, and enterprise application development. Over the
-              years, I have designed and delivered business-critical solutions,
-              integrated complex platforms, and helped teams adopt modern
-              engineering practices.
+              My experience has evolved from hands-on application development into
+              technical leadership and architecture responsibilities. I have worked
+              on legacy modernization, Azure adoption, microservices, CI/CD,
+              performance engineering and engineering practices that help teams
+              deliver software more consistently.
             </p>
 
             <p>
-              I enjoy solving complex technical challenges, improving system
-              reliability, mentoring engineers, and turning business
-              requirements into practical technology solutions with AI-assisted
-              development. My focus is on building maintainable systems that
-              balance business needs, scalability, and long-term sustainability.
+              I am also interested in practical enterprise AI. My recent work and
+              portfolio solutions explore Azure OpenAI, document intelligence,
+              knowledge retrieval and AI-assisted workflows, with attention to
+              grounding, data access, human oversight and operational reliability.
             </p>
 
             <div className="about-metrics">
               <div className="metric-card">
                 <h3>12+</h3>
-                <span>Years Experience</span>
+                <span>Years of enterprise engineering</span>
               </div>
-
               <div className="metric-card">
-                <h3>15+</h3>
-                <span>Enterprise Projects</span>
+                <h3>1M+ / Day</h3>
+                <span>High-volume data processing</span>
               </div>
-
+              <div className="metric-card">
+                <h3>60%</h3>
+                <span>Deployment-time reduction</span>
+              </div>
+              <div className="metric-card">
+                <h3>30%</h3>
+                <span>API response-time improvement</span>
+              </div>
               <div className="metric-card">
                 <h3>.NET + Azure</h3>
-                <span>Core Technology Stack</span>
+                <span>Core engineering focus</span>
               </div>
-
-              <div className="metric-card">
-                <h3>AI</h3>
-                <span>Azure OpenAI & AI Search</span>
-              </div>
-
               <div className="metric-card">
                 <h3>3 Domains</h3>
-                <span>Healthcare • Manufacturing • E-Commerce</span>
-              </div>
-
-              <div className="metric-card">
-                <h3>IT Professional</h3>
-                <span>
-                  Design, Develop, Integrate, Deliver, Lead & Transform
-                </span>
+                <span>Healthcare, manufacturing and e-commerce</span>
               </div>
             </div>
           </div>
@@ -76,32 +68,37 @@ const About = () => {
             <div className="highlight-card">
               <h3>Cloud Transformation</h3>
               <p>
-                Modernizing legacy applications and enabling scalable
-                cloud-native delivery on Microsoft Azure.
+                Modernizing legacy applications and moving suitable workloads toward
+                Azure-based architectures, with emphasis on maintainability,
+                deployment automation, observability and controlled migration.
               </p>
             </div>
 
             <div className="highlight-card">
               <h3>Architecture & Design</h3>
               <p>
-                Designing reliable, maintainable, and scalable solutions using
-                modern engineering and architectural practices.
+                Designing APIs, services and distributed systems around practical
+                requirements for scalability, reliability, security and long-term
+                maintainability rather than choosing architecture patterns in
+                isolation.
               </p>
             </div>
 
             <div className="highlight-card">
               <h3>Technical Leadership</h3>
               <p>
-                Mentoring engineers, improving delivery quality, and helping
-                teams build sustainable engineering practices.
+                Providing hands-on technical direction through architecture reviews,
+                engineering standards, technical decisions, code quality practices,
+                mentoring and delivery collaboration.
               </p>
             </div>
 
             <div className="highlight-card">
               <h3>Applied AI</h3>
               <p>
-                Leveraging Azure OpenAI and AI Search to build practical
-                AI-powered business solutions and automation workflows.
+                Exploring practical enterprise AI scenarios such as document
+                processing, knowledge retrieval and incident assistance while keeping
+                grounding, access control and human validation in the design.
               </p>
             </div>
           </div>

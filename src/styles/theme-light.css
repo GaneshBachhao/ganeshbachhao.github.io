@@ -1,19 +1,26 @@
-/* Light theme styles */
+/* Portfolio brand tokens - light theme */
 :root {
+  --brand-navy: #0A2D56;
+  --brand-cyan: #00D1FF;
+  --brand-violet: #7B61FF;
+  --brand-light: #F8F8FF;
 
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
+  --bg-primary: #F8F8FF;
+  --bg-secondary: #ffffff;
 
-  --text-primary: #1e293b;
-  --text-secondary: #64748b;
+  --text-primary: #0A2D56;
+  --text-secondary: #52657a;
 
-  --accent: #0078d4;
+  --accent: var(--brand-cyan);
+  --accent-secondary: #7B61FF;
+  --accent-soft: rgba(0, 209, 255, 0.10);
+  --accent-violet-soft: rgba(123, 97, 255, 0.10);
 
   --card-bg: #ffffff;
-  --card-border: #e5e7eb;
+  --card-border: rgba(10, 45, 86, 0.12);
+  --border-color: rgba(10, 45, 86, 0.12);
 
-  --border-color: #e5e7eb;
+  --shadow: 0 8px 28px rgba(10, 45, 86, 0.08);
 
-  /* Navbar */
-  --navbar-rgb: 255,255,255;
+  --navbar-rgb: 248,248,255;
 }

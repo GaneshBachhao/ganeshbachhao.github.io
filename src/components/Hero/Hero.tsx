@@ -1,63 +1,36 @@
-import { useEffect, useState } from "react";
 import "./Hero.css";
 
-const titles = [
-  "Senior Full Stack Engineer",
-  "Senior .NET Developer",
-  ".NET Backend Developer",
-  "Technology Lead",
-  ".NET & Azure Specialist",
-  "Cloud Modernization Engineer",
-  "Enterprise Application Developer",
-  "Azure Solutions Developer",
-  "Applied AI Developer",
-];
-
 const Hero = () => {
-  const [currentTitle, setCurrentTitle] = useState(titles[0]);
-
-  useEffect(() => {
-    let index = 0;
-
-    const interval = setInterval(() => {
-      index = (index + 1) % titles.length;
-      setCurrentTitle(titles[index]);
-    }, 2500);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section id="home" className="hero">
       <div className="hero-container">
-        {/* LEFT SIDE */}
-
         <div className="hero-left">
-          <span className="hero-badge">12+ Years Experience</span>
+          <span className="hero-badge">SENIOR .NET & AZURE ENGINEER · TECHNOLOGY LEAD</span>
 
           <h1>Ganesh Bachhao</h1>
 
-          <h2 className="dynamic-title">{currentTitle}</h2>
+          <h2>Cloud & AI Solutions</h2>
 
           <p className="hero-description">
-            Over the last 12+ years, I've designed, built, and modernized
-            enterprise applications using .NET and Azure. My experience spans
-            backend engineering, cloud modernization, technical leadership, and
-            AI-enabled solutions, with AI-assisted development, a strong focus
-            on delivering scalable, maintainable, and business-critical systems.
-            <span>Open to Remote, Hybrid Opportunities</span>
+            I design, modernize and deliver scalable enterprise applications using
+            C#, .NET, Angular and Microsoft Azure. My experience spans backend
+            engineering, cloud modernization, distributed systems, technical
+            leadership and practical AI solutions for enterprise workflows.
           </p>
 
-          {/* Recruiter Tags */}
+          <p className="hero-opportunity">
+            Open to remote and hybrid opportunities involving enterprise .NET and
+            Azure engineering, technical leadership, architecture and practical AI.
+          </p>
 
-          <div className="hero-tags">
+          <div className="hero-tags" aria-label="Core capabilities">
             <span>.NET</span>
             <span>Azure</span>
             <span>Angular</span>
-            <span>RESTful API</span>
-            <span>Cloud Migration</span>
+            <span>REST APIs</span>
+            <span>Cloud Modernization</span>
             <span>Azure OpenAI</span>
-            <span>Tech Leadership</span>
+            <span>Technical Leadership</span>
           </div>
 
           <div className="hero-buttons">
@@ -73,7 +46,11 @@ const Hero = () => {
                 });
               }}
             >
-              Download Resume
+              View Resume
+            </a>
+
+            <a href="#projects" className="btn-secondary">
+              Explore My Work
             </a>
 
             <a
@@ -96,30 +73,28 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+        <div className="hero-right" aria-label="Engineering focus">
+          <div className="hero-right-header">Engineering Focus</div>
 
-        <div className="hero-right">
-          <div className="hero-right-header">Quick Facts</div>
+          <article className="hero-card">
+            <h3>Enterprise</h3>
+            <p>Business-critical applications, APIs and modernization.</p>
+          </article>
 
-          <div className="hero-card">
-            <h3>12+</h3>
-            <p>Years Experience</p>
-          </div>
+          <article className="hero-card">
+            <h3>Azure</h3>
+            <p>Cloud-native services, delivery automation and observability.</p>
+          </article>
 
-          <div className="hero-card">
-            <h3>15+</h3>
-            <p>Enterprise Applications</p>
-          </div>
+          <article className="hero-card">
+            <h3>Architecture</h3>
+            <p>Distributed systems designed around scalability and reliability.</p>
+          </article>
 
-          <div className="hero-card">
-            <h3>.NET + Azure</h3>
-            <p>Primary Technology Focus</p>
-          </div>
-
-          <div className="hero-card">
-            <h3>AI Ready</h3>
-            <p>Azure OpenAI Solutions</p>
-          </div>
+          <article className="hero-card">
+            <h3>AI</h3>
+            <p>Practical enterprise AI with grounding and human oversight.</p>
+          </article>
         </div>
       </div>
     </section>

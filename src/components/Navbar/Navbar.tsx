@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 
 const sections = [
   "home",
-  "projects",
-  "skills",
-  "career",
-  "architecture",
+  "impact",
   "about",
+  "skills",
+  "projects",
+  "architecture",
+  "career",
   "ai-innovation",
   "contact",
 ];
@@ -61,20 +62,29 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a
-              href="#projects"
-              className={activeSection === "projects" ? "active" : ""}
-            >
-              Projects
+            <a href="#impact" className={activeSection === "impact" ? "active" : ""}>
+              Impact
             </a>
           </li>
-
+          <li>
+            <a href="#about" className={activeSection === "about" ? "active" : ""}>
+              About
+            </a>
+          </li>
           <li>
             <a
               href="#skills"
               className={activeSection === "skills" ? "active" : ""}
             >
               Expertise
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              className={activeSection === "projects" ? "active" : ""}
+            >
+              Projects
             </a>
           </li>
 
@@ -97,14 +107,6 @@ const Navbar = () => {
           </li>
 
           <li>
-            <a
-              href="#about"
-              className={activeSection === "about" ? "active" : ""}
-            >
-              About
-            </a>
-          </li>
-          <li>
             <a href="#ai-innovation" className="ai-nav-link">
               AI & Innovation
             </a>
@@ -126,23 +128,30 @@ const Navbar = () => {
         <button
           className="mobile-menu-btn"
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          aria-label="Toggle menu"
+          aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={mobileMenuOpen}
+          aria-controls="mobile-navigation"
         >
           ☰
         </button>
       </div>
 
       {mobileMenuOpen && (
-        <div className="mobile-menu">
+        <div id="mobile-navigation" className="mobile-menu">
           <a href="#home" onClick={closeMenu}>
             Home
           </a>
-          <a href="#projects" onClick={closeMenu}>
-            Projects
+          <a href="#impact" onClick={closeMenu}>
+            Impact
           </a>
-
+          <a href="#about" onClick={closeMenu}>
+            About
+          </a>
           <a href="#skills" onClick={closeMenu}>
             Expertise
+          </a>
+          <a href="#projects" onClick={closeMenu}>
+            Projects
           </a>
 
           <a href="#career" onClick={closeMenu}>
@@ -153,9 +162,6 @@ const Navbar = () => {
             Architecture
           </a>
 
-          <a href="#about" onClick={closeMenu}>
-            About
-          </a>
           <a href="#ai-innovation" onClick={closeMenu}>
             AI & Innovation
           </a>
