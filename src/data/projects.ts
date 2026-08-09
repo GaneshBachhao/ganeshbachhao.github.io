@@ -1,28 +1,4 @@
-export interface Project {
-  id: number;
-
-  category: string;
-  title: string;
-  summary: string;
-
-  problem: string;
-  scale: string;
-  architecture: string;
-
-  approach: string;
-  technologyRationale: string;
-  tradeoffs: string;
-
-  impact: string;
-
-  achievements: string[];
-
-  lessonsLearned: string;
-
-  leadership: string;
-
-  techStack: string[];
-}
+import type { Project } from "../types/project";
 
 export const projects: Project[] = [
   {
@@ -59,7 +35,7 @@ export const projects: Project[] = [
       "Zero-downtime migration execution",
       "Improved application reliability",
       "Enhanced monitoring and observability",
-      "Established cloud-native delivery practices"
+      "Established cloud-native delivery practices",
     ],
 
     lessonsLearned:
@@ -75,8 +51,8 @@ export const projects: Project[] = [
       "Azure SQL",
       "Azure Key Vault",
       "Azure DevOps",
-      "Application Insights"
-    ]
+      "Application Insights",
+    ],
   },
 
   {
@@ -113,7 +89,7 @@ export const projects: Project[] = [
       "Improved search relevance",
       "Enabled AI-powered knowledge retrieval",
       "Established reusable AI integration patterns",
-      "Demonstrated enterprise GenAI adoption"
+      "Demonstrated enterprise GenAI adoption",
     ],
 
     lessonsLearned:
@@ -129,8 +105,8 @@ export const projects: Project[] = [
       "Azure Storage",
       ".NET 8",
       "C#",
-      "REST APIs"
-    ]
+      "REST APIs",
+    ],
   },
 
   {
@@ -167,7 +143,7 @@ export const projects: Project[] = [
       "Improved data validation and quality controls",
       "Reduced manual intervention requirements",
       "Enabled scalable event-driven processing",
-      "Improved monitoring and operational visibility"
+      "Improved monitoring and operational visibility",
     ],
 
     lessonsLearned:
@@ -183,8 +159,8 @@ export const projects: Project[] = [
       "Azure Service Bus",
       "Azure Storage",
       "SQL Server",
-      "Application Insights"
-    ]
+      "Application Insights",
+    ],
   },
 
   {
@@ -221,7 +197,7 @@ export const projects: Project[] = [
       "Improved partner experience",
       "Enhanced API security",
       "Established API governance standards",
-      "Increased integration consistency"
+      "Increased integration consistency",
     ],
 
     lessonsLearned:
@@ -237,8 +213,8 @@ export const projects: Project[] = [
       "Azure API Management",
       "SQL Server",
       "Swagger/OpenAPI",
-      "Azure DevOps"
-    ]
+      "Azure DevOps",
+    ],
   },
 
   {
@@ -275,7 +251,7 @@ export const projects: Project[] = [
       "Reduced code review turnaround time",
       "Strengthened architectural consistency",
       "Accelerated onboarding of developers",
-      "Established sustainable engineering practices"
+      "Established sustainable engineering practices",
     ],
 
     lessonsLearned:
@@ -292,7 +268,7 @@ export const projects: Project[] = [
       "GitHub",
       "Azure DevOps",
       "CI/CD",
-      "Architecture Governance"
-    ]
-  }
+      "Architecture Governance",
+    ],
+  },
 ];

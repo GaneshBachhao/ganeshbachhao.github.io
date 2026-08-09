@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./FeaturedProjects.css";
 
-import { projects, type Project } from "../../data/projects";
+import { projects } from "../../data/projects";
+import type { Project } from "../../types/project";
 import ProjectModal from "../ProjectModal/ProjectModal";
 
 const FeaturedProjects = () => {
