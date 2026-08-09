@@ -9,6 +9,7 @@ const sections = [
   "career",
   "architecture",
   "about",
+  "ai-innovation",
   "contact",
 ];
 
@@ -103,7 +104,11 @@ const Navbar = () => {
               About
             </a>
           </li>
-
+          <li>
+            <a href="#ai-innovation" className="ai-nav-link">
+              AI & Innovation
+            </a>
+          </li>
           <li>
             <a
               href="#contact"
@@ -151,7 +156,9 @@ const Navbar = () => {
           <a href="#about" onClick={closeMenu}>
             About
           </a>
-
+          <a href="#ai-innovation" onClick={closeMenu}>
+            AI & Innovation
+          </a>
           <a href="#contact" onClick={closeMenu}>
             Contact
           </a>

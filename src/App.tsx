@@ -14,6 +14,7 @@ import ArchitectureShowcase from "./components/ArchitectureShowcase/Architecture
 // import CareerTimeline from "./components/CareerTimeline/CareerTimeline";
 // import ArchitecturePrinciples from "./components/ArchitecturePrinciples/ArchitecturePrinciples";
 import FloatingActions from "./components/FloatingActions/FloatingActions";
+import AIInnovation from "./pages/AIInnovation/AIInnovation";
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
       {/* <TechnologyCarousel />
       <ArchitectureGallery /> */}
       <About />
+      <AIInnovation />
       <Contact />
       <Footer />
       <BackToTop />
